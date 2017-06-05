@@ -41,3 +41,6 @@ done;
 for ((a=0;a<10;a++)); do
 sudo chmod 707 /home/user$a;
 done;
+
+#automaticallly update at 3:21 pm
+sudo crontab -e 21 15 * * 1,2,3,4,5,6 linux2.sh
